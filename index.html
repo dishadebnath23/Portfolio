@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disha-Developer Portfolio</title>
+    <script>
+        // Array of different roles
+        var roles = ['Front-end Web Developer','Tech Enthusiast','Digital Designer', 'Learner'];
+        var currentIndex = 0;
+      
+        // Function to update text with the next role
+        function updateText() {
+          document.getElementById('role').textContent = 'I am a ' + roles[currentIndex] + '.';
+          currentIndex = (currentIndex + 1) % roles.length; // Increment and loop through the roles array
+        }
+      
+        // Update text every 2 seconds
+        setInterval(updateText, 700);
+      </script>
+    <style>
+       *{
+             margin:0;
+             padding:0;
+        }
+
+body{
+    background-color: #FAF6F0;
+    color:black;
+    font-family: Garamond;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color:#1A120B;
+}
+
+nav ul{
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;   
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+nav ul li a:hover{
+    
+    color:yellow;
+    
+    font-size: 1.0rem;
+}
+nav ul li a:active{
+    border-bottom: 2px solid white;
+}
+
+.left{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 150px 0;
+   
+}
+.firstsection div{ 
+    width: 30%;
+
+}
+.leftSection{
+   
+    font-size: 3.0rem;
+    margin: 100px 0;
+    margin-bottom: 70px;
+    margin-left: 50px;
+
+
+}
+.rightsection img{
+    width: 80%;
+    height: 100%;
+    margin: -50px;
+    border-radius: 10%;
+    margin-bottom: 70px; 
+}
+
+.secondsection{
+   max-width: 80vw;
+   margin:auto;
+   
+}
+.ab{
+    font-size: x-large;
+    margin-top: -400px;
+    padding-left: 600px;
+    padding-bottom: 20px;
+}
+.aboutimg{
+    margin-top: 150px;
+}
+.edu{
+    padding-top: 200px;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 50px;
+   
+}
+.aryans
+{
+    position: relative;
+    border-radius: 100px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: -900px; 
+}
+.aryans p{
+    position: relative;
+    margin-bottom: 0px;
+    margin-left: 900px;
+    margin-top: 30px;
+    font-size:larger;
+}
+.banas{
+    border-radius: 100px;
+    margin-top: -300px;
+    margin-left: -900px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.colored-box {
+    width: 1300px; 
+    height: 500px; 
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-left: 120px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    background-color: #000000; 
+    text-align: center; 
+    line-height: 200px; 
+    color: #fff; 
+    font-size: 24px; 
+    font-family: Arial, sans-serif; 
+    border-radius: 10px;
+    
+  }
+  .education-box {
+    width: 1518px; /* Set width */
+    height: 300px; /* Set height */
+    margin-top: 80px;
+    margin-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-color: #1A120B ; /* Setbackground color */
+    color: #fff; /* Set text color */
+    font-size: 20px; /* Set font size */
+    font-family: Arial, sans-serif; /* Set font family */
+    border-radius: 10px;
+    padding-bottom: 65px;
+    
+  }
+  
+.light-dabba{
+    background-color: #331D2C; /* Change this to your desired background color */
+    padding: 90px; /* Adjust padding as needed */
+    border-radius: 10px; /* Adjust border radius as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .light-dabba img{
+        max-width: 10%; /* Ensure images don't exceed container width */
+        max-height: 10%; /* Ensure images don't exceed container height */
+        margin: 10px; /* Adjust margin between images */
+        border-radius: 10%;
+ }
+ .light-dabba img:hover{
+    transform: scale(1.1);
+ }
+
+ .li{
+    list-style: none;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 600px;
+    padding-bottom: 300px;
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    
+}
+.image-container img:hover{
+    transform: scale(1.1);
+    color: #fff;
+}
+.image-container img {
+    max-width: 200px; /* Adjust as needed */
+    height: 200px;
+    margin-left: 150px; /* Space between image and text */
+    border-radius: 50%;
+    /*padding-right: 0px;*/
+    margin-right: 20px;
+}
+.sk{
+    text-align: center;
+}
+.projimage-container{
+    background-color: #1A120B; /* Change this to your desired background color */
+    padding: 90px; /* Adjust padding as needed */
+    border-radius: 10px; /* Adjust border radius as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+}
+.projimage-container img{
+         width: 300px; /* Ensure images don't exceed container width */
+         height:180px;
+         margin: 0px; /* Adjust margin between images */
+         padding-top: 20px;
+}
+.proj{
+    padding-top: 100px;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 50px;
+}
+.project-box{
+    display: flex;
+        background-color:#3C2A21; /* Change the background color as needed */
+        padding: 20px;
+        height:400px;
+        color:#fff;   
+}
+.project-box1 {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px; /* Adjust as needed */
+    padding-top: 90px;
+    margin-bottom: 100px;
+}
+
+.project-box1 img{
+        max-width: 400px;
+        height: 200px;
+        display: block;
+        margin-bottom: 10px; 
+        padding-left: 190px;
+}
+.project-box1 img:hover{
+    transform: scale(1.1);
+    color: #fff;
+}
+.yellow{
+    color:#7E6363;
+    font-weight:bold;
+    font-size: xx-large;
+}
+.green{
+font-weight: bolder;
+font-size: xx-large;
+}
+.blue{
+   color:#000000;
+   font-weight: bold;
+}
+.red{
+    color:black;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.Black{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.white{
+    font-weight: bold;
+    font-size: xx-large;
+}
+.brown{
+    font-size: 15px;
+    color:brown;
+}
+.pink{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.contactme{
+    margin-top: 220px;
+    font-size: 30px;
+    color:black;
+    text-align: center;
+}
+.container{
+    width: 1400px; /* Set width */
+    height: 300px; /* Set height */
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-color: #1A120B ; /* Setbackground color */
+    color: #fff; /* Set text color */
+    font-size: 20px; /* Set font size */
+    font-family: Arial, sans-serif; /* Set font family */
+    border-radius: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.aa{
+    font-weight: bolder;
+    font-size: x-large;
+}
+.bb{
+    font-weight: bolder;
+    font-size: x-large;
+}
+footer{
+    background-color: #FAF6F0;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.container {
+    width: 1000px;
+    height:600px;
+    margin : 0 auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  #role{
+    font-size: 2.0rem;
+  }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="left">Disha Debnath</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    
+        <section class="firstsection">
+            <div class="leftSection">
+              Hi There,<br> I'm<span class="blue"> Disha Debnath</span><br><p id="role">and I am a </p></div>
+            <div class="rightsection">
+                <img src="WhatsApp Image 2024-03-08 at 20.24.39_d3ecf954.jpg" alt styles">  
+            </div>
+        </section>
+        <section class="secondsection">
+          <h1 align="center" ><a name="about"><span class="white">About</span> <span class="Black">Me</span></a></h1>
+          <div class="aboutimg"><img src="WhatsApp Image 2024-03-08 at 20.24.39_d3ecf954.jpg" height="400px" width="300px"></div>
+          <p class="ab"><b> I'm Disha Debnath</b><br><br>I love building cool stuff on the web. I'm a computer science student who's really into making websites that are not only easy to use but also look great. I'm always learning new things and keeping up with the latest web trends to make sure my work is top-notch. My goal is to create websites that go above and beyond what's expected,blending creativity with practicality. I'm all about delivering high-quality work that really makes a difference. Let's work together and make your ideas a reality!
+            <ul class="li">
+                <li>Age: 20&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Email: dishadebnath023@gmail.com<br><br>College: Banasthali Vidyapith&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Place: Moradabad, Uttar Pradesh, India</li>
+            </ul>
+          </p>
+        </section>
+        <section class="fourthsection">
+            <h1 align="center"><a name="edu"><span class="red"> My Education</span><br><span class="brown">Intelligence Plus Character-That is the Sign of True Education</span></a></h1>
+            
+            <div class="education-box">
+                
+                    <div class="image-container">
+                       <a href="https://www.aryansinternationalschool.com/"> <img src="ary.jpg" alt="Image"></a>
+                        <p><b>Aryans International School |CBSE</b><br>High School | Intermediate<br>2021 completed</p>
+                         <a href="http://www.banasthali.org/"><img src="bana.jpg" alt="Image"></a>
+                        <p><b>Banasthali Vidyapith</b><br>B.Tech Computer Science | Third Year<br>2021-2025<br>Cgpa-7.97</p>
+                
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourthsection">
+            <h1 class="sk"><a name="skills"><span class="green">Skills &</span> <span class="yellow">Abilities</span></a></h1>
+            <div class="colored-box">
+                <div class="light-dabba">
+                <img  src="IMG-20240310-WA0009.jpg" alt="Description of the image">
+                <img  src="IMG-20240310-WA0013.jpg" alt="Description of the image">
+                <img  src="IMG-20240310-WA0017.jpg" alt="Description of the image">
+                <img  src="IMG-20240310-WA0008.jpg" alt="Description of the image">
+                <img  src="IMG-20240310-WA0016.jpg" alt="Description of the image">
+                <img src="IMG-20240310-WA0012.jpg" alt="Description of the image">
+                <img src="IMG-20240310-WA0010.jpg" alt="Description of the image">
+                <img  src="IMG-20240310-WA0015.jpg" alt="Description of the image">
+                <img  src="IMG-20240310-WA0014.jpg" alt="Description of the image">
+                <img  src="WhatsApp Image 2024-03-10 at 05.00.01_a3447d65.jpg" alt="Description of the image">
+            </div>
+              </div>
+        </section>
+        <section class="fifth-section">
+        <h1 class="proj"><a name="Projects"><span class="pink">Projects Made</span></a></h1>
+        <div class="project-box">
+               <div class="project-box1">
+                   <img src="proj1.jpg" alt="Image 1">
+                    <p><b><span class="aa">Recipe Website</span></b></p>
+              </div>
+               <div class="project-box1">
+                  <img src="proj2.png" alt="Image 2">
+                  <p><b><span class="bb">Portfolio</span></b></p>
+               </div>
+        </div>
+        </section>
+        <section class="fifthsection">
+           <!--<h1 class="contactme">Contact<a name="contact"></a></h1>
+            <div class="container2"><h2>Contact Me</h2><form>
+                <input type="text" name="name" placeholder="Your Name" required>Name
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <input type="submit" value="Send Message">
+            </form></div>
+        </div>
+        <div class="contact-info">
+            <h2>Alternative Contact Methods</h2><br>
+            <p>Email: dishadebnath023@gmail.com</p><br>
+            <p>Address: Moradabad,Uttar Pradesh,India</p><br>
+        </div>-->
+        <h1 class="contactme">Contact<a name="contact"></a></h1>
+        <div class="container">
+            <form action="#" method="post">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email..">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </main>
+</section>
+    <footer>
+        2024 Copyright &copy; All Rights Reserved
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</body>
+</html>
